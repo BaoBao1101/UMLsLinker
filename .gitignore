@@ -1,0 +1,11 @@
+/data/processed/open_umls.db
+/data/raw/chebi_lite.obo
+/data/raw/desc2026.xml
+/data/raw/hp.obo
+/data/raw/mondo-base.obo
+/data/raw/xrefs.csv
+
+# Ignore processed outputs and vector index
+/data/processed/
+/data/processed/vector_index/
+/data/processed/vector_index/parts/

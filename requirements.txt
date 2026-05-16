@@ -1,0 +1,25 @@
+# OpenUMLS-Linker dependencies
+pandas>=2.1.1
+numpy>=1.25.0
+lxml>=4.9.3
+pronto>=2.5.0
+duckdb>=0.8.1
+qdrant-client>=1.7.3
+spacy>=3.6.0
+scispacy>=0.5.1
+torch>=2.2.0
+transformers>=4.40.0
+sentence-transformers>=2.2.2
+fastapi>=0.95.2
+uvicorn[standard]>=0.23.1
+tqdm>=4.65.0
+python-dotenv>=1.0.0
+
+# Optional (choose one depending on your vector DB preference):
+# faiss-cpu==1.7.4  # Optional: local FAISS index (may not have wheels for Windows/Python 3.12+)
+# hnswlib>=0.7.0    # Alternative ANN index
+
+# Notes:
+# - The SapBERT model is loaded via HuggingFace: cambridgeltl/SapBERT-from-PubMedBERT-fulltext
+# - ScispaCy model `en_core_sci_sm` should be installed separately if needed.
+#   Example: python -m pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.1/en_core_sci_sm-0.5.1.tar.gz
